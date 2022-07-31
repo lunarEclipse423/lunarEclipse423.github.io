@@ -1,0 +1,21 @@
+.logo {
+    display: flex;
+}
+
+.logo-path {
+    @extend %transition;
+}
+
+.logo-object {
+    width: 160px;
+    height: 30px;
+}
+
+.logo-svg {
+    cursor: pointer;
+    &:hover {
+        .logo-path {
+            fill: $color-primary;
+        }
+    }
+}
